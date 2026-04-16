@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Julios | DJ Instalaciones Eléctricas</title>
+
+    <meta name="description" content="DJ Instalaciones Eléctricas - Técnico Electricista Matriculado en Montevideo. Urgencias 24hs, firmas de UTE y reformas eléctricas con 5 estrellas de confianza.">
+    <meta name="keywords" content="electricista montevideo, urgencias electricas uruguay, firmas ute, instalador matriculado, electricista 24 horas">
+    <meta property="og:title" content="DJ Instalaciones Eléctricas | Técnico Matriculado">
+    <meta property="og:description" content="Servicio eléctrico profesional en Montevideo con garantía y certificación de UTE.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .mySwiper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.7); 
+            z-index: 10;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 20;
+        }
+        img { font-size: 0; }
+        @media (max-width: 768px) {
+            footer { padding-bottom: 80px; }
+        }
+
+        /* Efecto de pulso para el botón de WhatsApp */
+.pulse-whatsapp {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { box-shadow: 0 0 0 0px rgba(34, 197, 94, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0px rgba(34, 197, 94, 0); }
+}
+
+/* Efecto para que las tarjetas de servicio se eleven */
+.servicio-card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+    </style>
+</head>
+
+<body class="bg-white">
+
+  <header class="sticky top-0 z-50">
+    <nav class="bg-blue-900 text-white flex justify-between items-center shadow-lg h-16 md:h-20 px-4 md:px-8">
+        <a href="#inicio" class="flex items-center h-full group">
+            <img src="css/logo.png" alt="Logo DJ" class="logo-icon h-12 md:h-16 w-auto transition-transform group-hover:scale-105">
+            <span class="ml-3 text-xl md:text-2xl font-bold tracking-tight">
+                <span class="text-yellow-400">DJ</span> Instalaciones
+            </span>
+        </a>
+
+        <ul class="hidden md:flex gap-8 font-medium">
+            <li><a href="#inicio" class="hover:text-yellow-400 transition">Inicio</a></li>
+            <li><a href="#servicios" class="hover:text-yellow-400 transition">Servicios</a></li>
+            <li><a href="#trabajos" class="hover:text-yellow-400 transition">Trabajos</a></li>
+            <li><a href="#contacto" class="hover:text-yellow-400 transition">Contacto</a></li>
+        </ul>
+        
+        <div class="md:hidden text-2xl">☰</div>
+    </nav>
+</header>
+
+    <main>
+        <section id="inicio" class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2070" alt="Electricista"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?q=80&w=2070" alt="Tablero"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1558444479-27519c3d21c9?q=80&w=2070" alt="Herramientas"></div>
+                </div>
+                <div class="hero-overlay"></div>
+            </div>
+
+          <div class="hero-content text-center px-4 w-full max-w-4xl">
+    <div class="relative z-10 text-center px-4 w-full max-w-4xl flex flex-col items-center">
+    <div class="hero-logo-wrapper mb-4">
+      <img src="css/logo.png" alt="DJ Instalaciones Logo" class="hero-logo w-44 md:w-52 h-auto drop-shadow-2xl">
+    </div>
+    
+    <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-2xl">
+        <span class="text-yellow-400">DJ</span> Instalaciones Eléctricas
+    </h1>
+    </div>
+    
+    <p class="text-xl md:text-2xl text-gray-100 font-medium mb-10 drop-shadow-md">
+        Soluciones eléctricas de calidad con la confianza de un técnico matriculado.
+    </p>
+                <div class="flex justify-center">
+                    <a href="#contacto" class="bg-yellow-500 text-blue-900 font-bold py-4 px-10 rounded-full shadow-xl hover:bg-yellow-400 transition-all">
+                        Pedir Presupuesto Gratis
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="bg-gray-100 py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-blue-900 text-center mb-4">Servicios Eléctricos</h2>
+        <p class="text-center text-gray-600 mb-12">Seleccioná un servicio para solicitar presupuesto o consulta inmediata.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <button onclick="abrirContacto('Urgencia Eléctrica 24hs')" class="servicio-card bg-white p-6 rounded-xl shadow border-t-4 border-red-500 hover:shadow-xl transition cursor-pointer text-center">
+                <div class="text-3xl text-red-500 mb-2"><i class="fas fa-bolt"></i></div>
+                <h3 class="font-bold text-xl text-blue-900">Urgencias</h3>
+            </button>
+
+            <button onclick="abrirContacto('Firma Autorizada UTE')" class="servicio-card bg-white p-6 rounded-xl shadow border-t-4 border-yellow-500 hover:shadow-xl transition cursor-pointer text-center">
+                <div class="text-3xl text-yellow-500 mb-2"><i class="fas fa-file-signature"></i></div>
+                <h3 class="font-bold text-xl text-blue-900">Firmas UTE</h3>
+            </button>
+
+            <button onclick="abrirContacto('Instalaciones y Reformas')" class="servicio-card bg-white p-6 rounded-xl shadow border-t-4 border-blue-500 hover:shadow-xl transition cursor-pointer text-center">
+                <div class="text-3xl text-blue-500 mb-2"><i class="fas fa-tools"></i></div>
+                <h3 class="font-bold text-xl text-blue-900">Instalaciones</h3>
+            </button>
+
+            <button onclick="abrirContacto('Otros Servicios')" class="servicio-card bg-white p-6 rounded-xl shadow border-t-4 border-gray-500 hover:shadow-xl transition cursor-pointer text-center">
+                <div class="text-3xl text-gray-500 mb-2"><i class="fas fa-plus"></i></div>
+                <h3 class="font-bold text-xl text-blue-900">Otros</h3>
+            </button>
+        </div>
+    </div>
+</section>
+        
+                 <section id="resenas" class="py-20 bg-blue-900 text-white px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-4">Lo que dicen nuestros clientes</h2>
+        <div class="flex justify-center mb-12">
+            <div class="flex text-yellow-400 text-2xl">
+                ★★★★★ <span class="text-white text-lg ml-2">4.9/5 en Google</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                <p class="italic mb-6 text-gray-200">"Excelente profesional. Puntual, prolijo y muy bien equipado. Solucionó el problema del tablero en tiempo récord. Totalmente recomendable."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center font-bold text-blue-900">M</div>
+                    <div>
+                        <p class="font-bold">Marcelo G.</p>
+                        <p class="text-xs text-yellow-400 text-yellow-400">Cliente verificado en Google</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                <p class="italic mb-6 text-gray-200">"Tuvimos un cortocircuito un domingo y Daniel vino enseguida. Se nota que sabe mucho de normativa y nos dejó todo seguro. Gran trabajo."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center font-bold text-blue-900">A</div>
+                    <div>
+                        <p class="font-bold">Andrea F.</p>
+                        <p class="text-xs text-yellow-400">Cliente verificado en Google</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                <p class="italic mb-6 text-gray-200">"Hizo toda la instalación eléctrica de mi local nuevo. Muy prolijo con las canalizaciones y cumplió con todos los plazos acordados."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center font-bold text-blue-900">J</div>
+                    <div>
+                        <p class="font-bold">Juan Pablo R.</p>
+                        <p class="text-xs text-yellow-400">Cliente verificado en Google</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12 flex flex-col items-center gap-6">
+            <a href="https://www.google.com/search?q=dj+instalaciones+electricas#lrd=0x959f81..." target="_blank" class="inline-flex items-center text-yellow-400 hover:underline font-medium">
+                Ver todas las reseñas en Google Maps 
+                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+            </a>
+
+            <div class="mt-4 pt-6 border-t border-white/10 w-full max-w-xs">
+                <p class="mb-4 text-sm text-gray-300 italic">¿Fuiste mi cliente?</p>
+               <a href="https://www.google.com/search?q=dj+instalaciones+electricas#lrd=0x95a02bd39b9039fd:0x4b305c651399c646,3,,,," 
+   target="_blank" 
+   class="inline-block bg-white text-blue-900 px-8 py-3 rounded-full hover:bg-yellow-400 transition-all font-bold shadow-lg">
+    <i class="fab fa-google mr-2"></i>Dejar una reseña en Google
+</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contacto" class="py-20 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-4xl font-bold text-blue-900 text-center mb-12">Ubicación y Contacto</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6">Envianos un mensaje</h3>
+                        <p class="text-gray-600 mb-6">Seleccioná un servicio arriba para una consulta específica, o contactanos directamente.</p>
+                        <button onclick="abrirContacto('Consulta General')" class="w-full bg-blue-900 text-white font-bold py-3 rounded-lg hover:bg-blue-800 shadow-lg">
+                            Contactar Ahora
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col gap-6">
+                        <div class="rounded-2xl overflow-hidden shadow-xl h-[300px] border-4 border-white">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d104705.48682764253!2d-56.24934238496096!3d-34.905283480401515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a02bd39b9039fd%3A0x4b305c651399c646!2sDJ%20Instalaciones%20Electricas.%20Firma%20Instaladora%20autorizada%20por%20UTE!5e0!3m2!1ses!2suy!4v1776274027568!5m2!1ses!2suy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="bg-blue-900 text-white p-6 rounded-2xl shadow-xl">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-white p-2 rounded-lg">
+                                    <i class="fab fa-google text-2xl text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-lg leading-tight">DJ Instalaciones Eléctricas</p>
+                                    <p class="text-yellow-400 text-sm">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <span class="ml-1 text-white">(4.9 / 5 en Google)</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-sm text-blue-100 mb-4">Firma instaladora autorizada por UTE en Montevideo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-blue-900 text-center mb-10">Consultas Técnicas Frecuentes</h2>
+                <div class="space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">¿Por qué salta la llave térmica constantemente?</h3>
+                        <p class="text-gray-600">Generalmente se debe a una **sobrecarga** o un **cortocircuito**. Realizamos un balanceo de cargas para evitar que tus cables se dañen.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">¿Qué es el Certificado de Instalación para UTE?</h3>
+                        <p class="text-gray-600">Es el documento firmado por un técnico autorizado que garantiza que tu propiedad cumple con el Reglamento de Baja Tensión.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">¿Es necesaria la descarga a tierra (jabalina)?</h3>
+                        <p class="text-gray-600">Es **vital para tu seguridad**. La puesta a tierra deriva las fugas de corriente al suelo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white pt-12 pb-6">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-yellow-400">DJ Instalaciones</h3>
+                <p class="text-sm text-gray-300">Técnico Matriculado. Seguridad y confianza eléctrica en tu hogar o comercio.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Navegación</h3>
+                <ul class="text-sm text-gray-400 space-y-2">
+                    <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-white">Servicios</a></li>
+                    <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                <p class="text-sm text-gray-400"><i class="fas fa-envelope mr-2"></i> dj.instalacionesinfo@gmail.com</p>
+                <p class="text-sm text-gray-400 mt-2"><i class="fab fa-whatsapp mr-2"></i>095 362 619</p>
+            </div>
+        </div>
+        <div class="border-t border-blue-800 mt-10 pt-6 text-center text-xs text-gray-500">
+            © 2026 DJ Instalaciones Eléctricas.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/59895362619" target="_blank" class="pulse-whatsapp fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center gap-3">
+    <i class="fab fa-whatsapp text-3xl"></i>
+</a>
+
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-blue-900 grid grid-cols-2 border-t-2 border-yellow-400 z-50">
+        <a href="tel:095362619" class="flex flex-col items-center justify-center py-3 text-white border-r border-blue-800">
+            <i class="fas fa-phone-alt text-xl mb-1"></i><span class="text-xs font-bold uppercase">Llamar Ahora</span>
+        </a>
+        <a href="https://wa.me/59895362619" class="flex flex-col items-center justify-center py-3 text-white">
+            <i class="fab fa-whatsapp text-xl mb-1 text-green-400"></i><span class="text-xs font-bold uppercase">WhatsApp</span>
+        </a>
+    </div>
+
+   <div id="modalContacto" class="hidden fixed inset-0 bg-black bg-opacity-60 z-[100] flex items-start justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-md w-full p-8 relative shadow-2xl my-auto">
+        <button onclick="cerrarContacto()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl">&times;</button>
+        <h2 id="modalTitulo" class="text-2xl font-bold text-blue-900 mb-2">Servicio</h2>
+        <p class="text-gray-500 mb-6 text-sm">Elegí el medio de contacto:</p>
+        
+        <div class="space-y-4">
+            <button onclick="irAWhatsApp()" class="w-full bg-green-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-green-700 transition">
+                <i class="fab fa-whatsapp text-2xl"></i> Consultar por WhatsApp
+            </button>
+            
+            <div class="relative flex py-2 items-center">
+                <div class="flex-grow border-t border-gray-200"></div>
+                <span class="flex-shrink mx-4 text-gray-400 text-[10px] uppercase font-bold">o enviar correo</span>
+                <div class="flex-grow border-t border-gray-200"></div>
+            </div>
+
+            <form action="https://formspree.io/f/xojyjkdj" method="POST" id="form-contacto" class="space-y-4">
+    <input type="hidden" name="servicio_seleccionado" id="inputServicio">
+    
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div class="grid grid-cols-2 gap-3">
+        <input type="text" name="nombre" placeholder="Nombre" required 
+               class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:border-blue-500 outline-none">
+        <input type="text" name="apellido" placeholder="Apellido" required 
+               class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:border-blue-500 outline-none">
+    </div>
+
+    <input type="email" name="email" placeholder="Correo electrónico" required 
+           class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:border-blue-500 outline-none">
+
+    <div class="grid grid-cols-2 gap-3">
+        <input type="tel" name="telefono" placeholder="Celular (9 dígitos)" 
+               pattern="[0-9]{9}" title="Ingresá los 9 dígitos de tu celular sin espacios" required 
+               class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:border-blue-500 outline-none">
+        
+        <input type="text" name="barrio_zona" placeholder="Barrio / Zona" required 
+               class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:border-blue-500 outline-none">
+    </div>
+
+    <textarea name="mensaje" rows="4" placeholder="Contanos tu problema (mínimo 20 letras)..." 
+              required minlength="20" 
+              class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:border-blue-500 outline-none"></textarea>
+
+    <button type="submit" class="w-full bg-blue-900 text-white font-bold py-3 rounded-lg hover:bg-blue-800 shadow-lg transition active:scale-95">
+        Enviar Solicitud
+    </button>
+</form>
+
+        </div>
+    </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
